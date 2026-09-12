@@ -1,0 +1,19 @@
+name: Simple Demo Workflow
+
+# 1. Trigger the workflow on every push or manually via the GitHub UI
+on:
+  push:
+  workflow_dispatch:
+
+# 2. Define what the runner should actually do
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest # Uses a hosted Linux virtual machine
+    steps:
+      - name: Print a greeting
+        run: echo "Hello, GitHub Actions is working!"
+
+      - name: Show system information
+        run: |
+          echo "Running on a Ubuntu runner."
+          node -v
