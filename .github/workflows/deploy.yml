@@ -16,6 +16,6 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd /home/ubuntu/githubaction
-            git pull origin main
+            git reset --hard origin/main
             npm install
             npm run dev
