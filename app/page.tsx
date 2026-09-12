@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      <p>Working Fine </p>
+      <p>Working </p>
     </>
   );
 }
